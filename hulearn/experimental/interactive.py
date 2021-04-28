@@ -2,12 +2,13 @@ import uuid
 from pkg_resources import resource_filename
 
 from clumper import Clumper
-from kora.bokeh.models import ColumnDataSource
-from kora.bokeh.plotting import figure, show
-from kora.bokeh.models import PolyDrawTool, PolyEditTool
-from kora.bokeh.layouts import row
-from kora.bokeh.models.widgets import Div
-from kora.bokeh.io import output_notebook
+from kora import bokeh
+from bokeh.models import ColumnDataSource
+from bokeh.plotting import figure, show
+from bokeh.models import PolyDrawTool, PolyEditTool
+from bokeh.layouts import row
+from bokeh.models.widgets import Div
+from bokeh.io import output_notebook
 
 
 def color_dot(name, color):
